@@ -1,11 +1,3 @@
-/*=====================================================
-Template Name   : Electrow
-Description     : Power And Electricity Services HTML5 Template
-Author          : LunarTemp
-Version         : 1.0
-=======================================================*/
-
-
 (function ($) {
     
     "use strict";
@@ -131,6 +123,64 @@ Version         : 1.0
         }
     });
 
+    // Product Slider
+    $('.product-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+    $('.solutions-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
+    $('.services-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+
 
     // preloader
     $(window).on('load', function () {
@@ -231,12 +281,20 @@ Version         : 1.0
 
 })(jQuery);
 
+$("#number").intlTelInput({
+    allowDropdown:true,
+    showFlags:true,
+    autoInsertDialCode:true,
+    initialCountry:"",
+    formatOnDisplay:true,
+    initialCountry:"PK"
+});
 
-
-
-
-
-
-
-
-
+$("#telephone").intlTelInput({
+    allowDropdown:true,
+    showFlags:true,
+    autoInsertDialCode:true,
+    initialCountry:"",
+    formatOnDisplay:true,
+    initialCountry:"PK"
+});
