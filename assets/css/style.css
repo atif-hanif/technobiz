@@ -350,9 +350,6 @@ label {
 	background: var(--theme-bg-light);
 }
 
-
-
-
 /*====================
 6. Margin & padding
 ======================*/
@@ -367,6 +364,10 @@ label {
 
 .py-120 {
 	padding: 120px 0;
+}
+
+.py-60 {
+	padding: 60px 0;
 }
 
 .pt-120 {
@@ -785,7 +786,7 @@ label {
 	left: 0;
 	top: 0;
 	bottom: -1px;
-	width: 48%;
+	width: 49%;
 	background: var(--theme-color);
 	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	z-index: -1;
@@ -4996,11 +4997,41 @@ label {
 /* Custom */
 
 .bottom-header {
-    background-color: var(--theme-color);
+    background-color: var(--color-white);
 }
 
+.bottom-header .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.bottom-header .navbar-nav li{
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.bottom-header .navbar-nav li::after {
+    position: absolute;
+    width: 2px;
+    right: 0;
+	top: 13px;
+    content: ' ';
+    height: 50%;
+    background: var(--secondary-color);
+}
+
+.bottom-header .navbar-nav li:last-child::after {
+   width: 0;
+} 
+
 .products .card {
-	border: 2px solid var(--theme-color);
+	/* border: 2px solid var(--theme-color); */
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
 }
 
 .orange-btn {
@@ -5069,6 +5100,8 @@ label {
 
 .solutions .card {
 	border-radius: 0px;
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
 }
 
 .measurement-menu {
@@ -5079,6 +5112,9 @@ label {
 @media (min-width: 992px) {
     .bottom-header .nav-item .nav-link {
         padding: 10px;
-        color: var(--color-white);
+        color: var(--theme-color);
+		margin-left: 10px;
+		margin-right: 10px;
     }
+
 }
