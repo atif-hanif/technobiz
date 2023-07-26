@@ -972,6 +972,11 @@ label {
 		text-transform: capitalize;
 	}
 
+	.bottom-header .nav-item .nav-link {
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+
 	.navbar .nav-item:last-child .nav-link {
 		margin-right: 0;
 	}
@@ -1412,8 +1417,8 @@ label {
 }
 
 .hero-single {
-	padding-top: 300px;
-	padding-bottom: 300px;
+	padding-top: 250px;
+	padding-bottom: 250px;
 	background-position: center !important;
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
@@ -5015,9 +5020,9 @@ label {
 
 .bottom-header .navbar-nav li::after {
     position: absolute;
-    width: 2px;
+    width: 1px;
     right: 0;
-	top: 13px;
+	top: 10px;
     content: ' ';
     height: 50%;
     background: var(--secondary-color);
@@ -5113,8 +5118,8 @@ label {
     .bottom-header .nav-item .nav-link {
         padding: 10px;
         color: var(--theme-color);
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 5px;
+    	margin-right: 5px;
     }
 
 }
